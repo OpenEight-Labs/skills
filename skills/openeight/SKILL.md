@@ -19,8 +19,7 @@ that needs checking, and preserve the user's choice of governance or observation
 If that choice is unclear, explain the effect on tool execution before proceeding.
 
 Read the bundled [support guidance](references/support.md) before choosing SDK
-instructions. This is candidate guidance: it does not establish a qualified public
-release or installation route. Check installed versions and public signatures;
+instructions. Check installed versions and public signatures;
 do not silently upgrade packages or treat unknown versions as supported.
 
 Read only the references needed for the task:

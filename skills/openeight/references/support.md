@@ -1,8 +1,9 @@
 # Support and compatibility
 
-This skill is candidate guidance. Public installation, assistant behavior, and
-live backend/provider/Console acceptance remain unverified. A package appearing
-in a registry does not establish that this skill has been tested against it.
+Codex installed the published Python SDK and guided a hosted refund walkthrough
+through Console approval to a simulated receipt. The revised policy handoff was
+checked separately in Codex using a simulated onboarding state. Claude Code
+behavioral testing is deferred. Anonymous installation is pending public release.
 
 The candidate references target Python `openeight` 0.0.1 and TypeScript
 `@openeight/sdk` 0.0.1. Distinguish the runtime of the selected artifact from the
