@@ -10,7 +10,7 @@ Agent skills for coding assistants working with OpenEight. Use them to govern to
 
 ## Installation
 
-The `openeight` skill is a release candidate. Public installation instructions will be available once installer and assistant testing is complete. For the SDK versions and runtimes covered by this candidate, see the [compatibility guide](skills/openeight/references/support.md).
+The `openeight` skill is currently available as a release candidate. See the [compatibility guide](skills/openeight/references/support.md) for SDK versions and runtime requirements.
 
 ## Prerequisites
 

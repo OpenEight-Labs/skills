@@ -2,12 +2,9 @@
 
 Inspect runtime, package manager, manifest, lock and existing configuration. Verify the
 official registry package, version, ownership and artifact digest before installing.
-The bundled [support guidance](support.md) describes candidate qualification, not live registry
-availability. Check the selected package in its official registry; a published
-package alone does not qualify this skill. If unavailable, report the gate; never
-fall back silently to a branch, editable install, unrelated package or sibling checkout.
-An explicitly supplied reviewed wheel/source revision may be used for candidate qualification.
-Record its immutable input and hash and label the result candidate-only.
+If the selected version is unavailable from the official registry, explain which
+package is missing. Use a local wheel or source revision only when the user
+explicitly supplies it. Record its version and digest.
 
 Use normal package tools to update declarations and locks with the selected exact version.
 Choose only relevant extras: LangChain is included in the Python candidate; deepagents,
@@ -15,9 +12,7 @@ langchain-durable, deepagents-durable, mcp and checkpoints-postgres are separate
 Check runtime requirements for the selected workflow using [support guidance](support.md).
 For managed Python, match the installed SDK's complete framework tuple, not only
 its Python version. The SDK's runtime range and the cookbook's documented range
-are separate. TypeScript remains a private candidate targeting Node 24; emitted
-JavaScript/declarations and an installed-tarball check do not qualify a public
-registry package.
+are separate. The TypeScript candidate targets Node.js 24.
 
 Check dependency resolution, installed version/origin, and imports in the project runtime.
 For an install-only request, report those results and finish here.
