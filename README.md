@@ -10,7 +10,29 @@ Agent skills for coding assistants working with OpenEight. Use them to govern to
 
 ## Installation
 
-The `openeight` skill is currently available as a release candidate. See the [compatibility guide](skills/openeight/references/support.md) for SDK versions and runtime requirements.
+### Skills CLI
+
+From your project directory, run:
+
+```bash
+npx skills add OpenEight-Labs/skills --skill openeight
+```
+
+Choose your coding assistant when prompted.
+
+### Manual installation with Git
+
+From your project directory, clone the release into a sibling folder. For a fresh Codex project installation, copy the complete skill into `.agents/skills/`:
+
+```bash
+git clone --branch v0.1.0 --depth 1 https://github.com/OpenEight-Labs/skills.git ../openeight-skills
+mkdir -p .agents/skills
+cp -R ../openeight-skills/skills/openeight .agents/skills/
+```
+
+For Claude Code, use `.claude/skills/` in the last two commands. You can remove the clone after copying the skill.
+
+See the [compatibility guide](skills/openeight/references/support.md) for SDK versions and runtime requirements.
 
 ## Prerequisites
 
