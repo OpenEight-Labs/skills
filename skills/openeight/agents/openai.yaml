@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenEight"
+  short_description: "Set up clients, run recipes, and connect agents"
+  default_prompt: "Use $openeight to connect my agent to OpenEight."
