@@ -94,15 +94,15 @@ Only give a full manual runbook when the user requests one.
    Agent onboarding. Onboarding creates the proposal. If it has not appeared,
    help resolve the onboarding status before continuing. Keep policy generation
    and Rego entry out of the handoff.
-   For either a proposal or an existing active policy, confirm the policy test
-   for this published `issue_refund` version with
-   `{"order_id":"ORD-1042","amount":180,"currency":"EUR"}` returns **Require approval**.
-   Use an existing matching test result for the same policy revision and inputs
-   if available. If the verdict differs or cannot be confirmed, stop before
-   starting the refund and explain the result. For a proposal that passes,
-   let the user choose **Accept** if they agree. An active policy needs no
-   acceptance. Start the run only once the tested rule is active and the tool
-   version is policy-ready.
+   Ask the user to review the proposed rule and choose **Accept** if it requires
+   approval for the demo’s €180 refund and they agree. Assist supplies the test
+   cases and the Console enables binding only after they pass. Leave testing to
+   that workflow. If acceptance is blocked, use the reason shown in the Console.
+   After acceptance, check readiness for the published tool version yourself.
+   For an existing active policy, use its rule to establish whether this refund
+   requires approval and skip acceptance. If the rule allows the refund outright
+   or its coverage is unclear, pause before starting the run. Never use a live
+   refund to probe the policy.
 3. From the cookbook root run
    `python cookbook.py run governed-refund -- run ORD-1042` and keep the process
    alive. Guide the user to **Approvals**, filter by their Agent, and open the

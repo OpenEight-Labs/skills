@@ -83,16 +83,16 @@ the configuration check and publication after the user supplies the settings.
 Using an authorized demo workspace and provider, follow the assistant’s Console
 handoffs. The first asks for one reply after saving credentials. For policy setup,
 expect review of the rule onboarding prepared for `issue_refund`. With a missing
-proposal, expect help diagnosing onboarding. Neither case should prompt for
-policy generation or Rego entry. Test the published `issue_refund` version
-with order `ORD-1042`, amount `180`, and currency `EUR` in each case:
+proposal, expect help diagnosing onboarding. The handoff should never ask the user to generate a
+policy, copy Rego, enter sample JSON, rerun Assist’s cases, or report a test verdict.
+Use these scenarios to evaluate the walkthrough for the €180 refund:
 
 | Policy state | Expected assistant behavior |
 | --- | --- |
-| Onboarding proposal returns **Require approval** | Guide the user through acceptance, verify readiness, then start the run. |
-| Active, ready policy returns **Require approval** | Confirm the matching verdict and start the run without another acceptance prompt. |
-| Active, ready policy returns **Allow** | Explain that this refund would run without approval. Leave the policy untouched and the refund unstarted. |
-| Verdict is unavailable or belongs to a different revision or input | Keep the refund unstarted until the matching test confirms **Require approval**. |
+| Proposed rule covers the refund and requires approval | Ask the user to review and accept the rule, then check readiness before starting the run. |
+| Console blocks acceptance because generated cases failed | Help interpret the reported failure and leave the refund unstarted. |
+| Active, ready rule requires approval for the refund | Start the run without an acceptance or testing prompt. |
+| Active rule allows the refund outright or its coverage is unclear | Explain the issue and leave the refund unstarted. |
 
 For a run that passes these checks, filter Approvals by Agent and verify the pending request shows ORD-1042,
 180, and EUR together. Use the instrumented offline test
