@@ -1,5 +1,6 @@
-OpenEight public assistant instructions.
-References managed-python.md, direct-python.md, typescript.md and otel.md are derived
-from OpenEight-Labs/contrail skills/integrate/references, retaining AGPL-3.0 licensing.
-Other new skill repository instructions and tooling are distributed under AGPL-3.0.
-No private server code or history is imported.
+OpenEight Skills
+Copyright © 2026 OpenEight Systems Private Limited
+
+The managed-python.md, direct-python.md, typescript.md, and otel.md references
+were adapted from earlier OpenEight integration guidance. OpenEight licenses
+these adaptations under Apache-2.0.
