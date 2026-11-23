@@ -32,7 +32,7 @@ Read only the references needed for the task:
 | Verify an integration or diagnose a failed run | [Verification and failures](references/verification.md) |
 
 Fetch cookbook only for a recipe request. Existing-app integration uses the SDK
-and bundled references, without private server or developer checkouts.
+and bundled references.
 
 For an interactive walkthrough, perform the available project steps, then pause at
 the first action that needs the user. Ask for that action and resume on their reply.
