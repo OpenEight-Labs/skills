@@ -10,7 +10,13 @@ Agent skills for coding assistants working with OpenEight. Use them to govern to
 
 ## Installation
 
-The `openeight` skill is currently available as a release candidate. See the [compatibility guide](skills/openeight/references/support.md) for SDK versions and runtime requirements.
+From your project directory, run:
+
+```bash
+npx skills add OpenEight-Labs/skills --skill openeight
+```
+
+Choose your coding assistant when prompted. See the [compatibility guide](skills/openeight/references/support.md) for SDK versions and runtime requirements.
 
 ## Prerequisites
 
