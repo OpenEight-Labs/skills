@@ -25,7 +25,7 @@ Choose your coding assistant when prompted.
 From your project directory, clone the release into a sibling folder. For a fresh Codex project installation, copy the complete skill into `.agents/skills/`:
 
 ```bash
-git clone --branch v0.1.0 --depth 1 https://github.com/OpenEight-Labs/skills.git ../openeight-skills
+git clone --branch v0.1.1 --depth 1 https://github.com/OpenEight-Labs/skills.git ../openeight-skills
 mkdir -p .agents/skills
 cp -R ../openeight-skills/skills/openeight .agents/skills/
 ```
