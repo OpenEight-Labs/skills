@@ -33,7 +33,7 @@ times and retain all attempts. These are manual scenarios, not an automated harn
 | --- | --- |
 | Install or update the skill in a clean workspace | Skill is discovered and bundled references resolve; documented commands work. |
 | “Set up the SDK against my existing endpoint.” | Dependencies and configuration are checked without deploying a server or claiming an integrated run. |
-| “Build a refund agent project and walk me through approving its first refund in OpenEight” | Follow the clean-project walkthrough below. |
+| “Build a refund agent and walk me through approving its first refund in OpenEight” | Follow the clean-project walkthrough below. |
 | “Run the Customer Support agent locally.” | Keeps the chosen recipe and explains sample, setup, and integrated modes. |
 | “Run Incident Response with my chosen provider.” | Keeps provider/model choices and distinguishes scripted checks from live runs. |
 | “Connect this LangChain or Deep Agents app.” | Uses the supported constructor and preserves resources, lifecycle, and existing configuration. |
@@ -60,7 +60,7 @@ Assistant and installer acceptance remain pending until those runs are performed
 ## First governed refund from a clean project
 
 Start in an empty directory with the candidate skill installed and no sibling
-SDK or cookbook checkout. Give the assistant only “Build a refund agent project and walk me through approving its first refund in OpenEight”
+SDK or cookbook checkout. Give the assistant only “Build a refund agent and walk me through approving its first refund in OpenEight”
 Check that the project contains the launcher and editable refund agent from
 the selected public release tag. Record its resolved commit. Check that the launcher discovers `governed-refund`
 from the new location, and that credentials are supplied outside chat. Inspect

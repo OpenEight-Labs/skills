@@ -25,7 +25,7 @@ PATHS = (
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("project", type=Path, help="destination project directory")
-    parser.add_argument("--revision", default="python-v0.0.1", help="release tag or full commit ID")
+    parser.add_argument("--revision", default="cookbook-v0.0.1", help="release tag or full commit ID")
     args = parser.parse_args()
     revision = args.revision
     ref = revision if re.fullmatch(r"[0-9a-fA-F]{40}", revision) else f"refs/tags/{revision}"

@@ -44,19 +44,19 @@ export OPENEIGHT_AGENT_NAME='<your-agent-name>'
 export OPENEIGHT_API_KEY='<your-agent-machine-key>'
 ```
 
-Keep keys in your project’s private configuration and out of chat. For a recipe that calls a model, you’ll also need credentials for your chosen model provider. You review policies and decide approval requests in the Console.
+Keep keys in your agent’s private configuration and out of chat. For a recipe that calls a model, you’ll also need credentials for your chosen model provider. You review policies and decide approval requests in the Console.
 
 ## Usage
 
-With the skill installed, open your project and describe what you want to do. For a new demo project, start in an empty folder.
+With the skill installed, open your agent’s folder and describe what you want to do. For a new demo agent, start in an empty folder.
 
 | Task | Example prompt |
 | --- | --- |
-| Install the SDK | Install the OpenEight SDK in this project and verify the installation. |
+| Install the SDK | Install the OpenEight SDK for this agent and verify the installation. |
 | Govern tool calls | Connect this agent to OpenEight so its tool calls follow our policies. Keep my framework and model configuration. |
 | Observe runs | Send this application’s existing OpenTelemetry spans to OpenEight for observation. |
 | Try a local example | Run the Customer Support cookbook agent locally. |
-| Walk through an approval | Build a refund agent project and walk me through approving its first refund in OpenEight |
+| Walk through an approval | Build a refund agent and walk me through approving its first refund in OpenEight |
 | Check an integration | Check this OpenEight integration and explain what still needs setup. |
 
 ## Contributing
