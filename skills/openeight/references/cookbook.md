@@ -1,8 +1,7 @@
 # Run the requested recipe
 
 For a new first-refund project, export the refund project using the bundled helper below from the official
-`https://github.com/OpenEight-Labs/openeight.git` repository at release tag
-`python-v0.0.1`. Honor an explicit revision supplied by the user. For other
+`https://github.com/OpenEight-Labs/openeight.git` repository at the cookbook release pinned by the helper. Honor an explicit revision supplied by the user. For other
 recipes use their selected immutable revision. Inspect the requested project
 only. A neighboring checkout or cached release tag is not a fallback source.
 An explicitly supplied candidate can be used and identified as such.
@@ -61,7 +60,7 @@ Run the bundled [refund export helper](../scripts/export_refund.py) with a worki
 Python interpreter. Resolve the script relative to this installed skill and pass the
 destination project directory, for example
 `python3 "$skill_dir/scripts/export_refund.py" "$project_dir"` with both paths resolved.
-The default release is `python-v0.0.1`; use
+Use
 `--revision TAG_OR_FULL_COMMIT` for an explicit override. The helper stages the
 sparse checkout, including its lazy blob downloads, within one network operation
 and prints the resolved commit. Reuse an existing demo on repeat visits.
